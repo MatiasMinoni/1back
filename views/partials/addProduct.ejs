@@ -1,0 +1,29 @@
+
+    <div class="row">
+      <form action="/products" method="post" class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input name="product" id="product" placeholder="Producto" type="text" class="validate">
+            <label for="product"></label>
+          </div>
+          <div class="input-field col s6">
+            <input name="price" id="price" type="number" placeholder="Precio" class="validate">
+            <label for="price"></label>
+          </div>
+        </div>
+        <div class="file-field input-field">
+          <div class="waves-effect blue lighten-1 btn boton">
+            <span>File</span>
+            <input type="file"  name="photo" id="photo" placeholder="Foto">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" placeholder="Insertar imagen" type="text">
+          </div>
+        </div>
+        <input type="hidden" name="id" id="id">
+  
+        <button class="waves-effect blue lighten-1 btn boton">Enviar</button>
+
+      </form>
+    </div>
+        

@@ -1,0 +1,33 @@
+
+<% if(products.length > 0) {  %> 
+
+  <table class="table card-panel blue lighten-1">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Foto</th>
+        <th scope="col">Id</th>
+  
+        <% for (const product of products  ) {   %> 
+
+      
+        </tr>
+    </thead>
+    <tbody>
+     
+      <tr>
+        <th scope="row"><%=product.product%></th>
+        <td><%=product.price%></td>
+        <td><img src="assets/<%=product.photo%>" width="40x" alt="<%=product.product%>"></td>
+        <td><%=product.id%></td>
+      </tr>
+      </tr>
+    </tbody>
+ 
+<% } ; %> 
+</table>
+<% } else{ %>
+<h5 class="NoDatos">No se encontraron datos</h5>
+<% } %>        
+
